@@ -1,6 +1,6 @@
 # md5, sha256 from https://pypi.org/pypi/trio/json
-md5  f7dbfa6a8722065f09da188641d8ed93  trio-0.22.0.tar.gz
-sha256  ce68f1c5400a47b137c5a4de72c7c901bd4e7a24fbdebfe9b41de8c6c04eaacf  trio-0.22.0.tar.gz
+md5  9fc61b21b7203e0d76a60752c3728b1e  trio-0.22.2.tar.gz
+sha256  3887cf18c8bcc894433420305468388dac76932e9668afa1c49aa3806b6accb3  trio-0.22.2.tar.gz
 # Locally computed sha256 checksums
 sha256  418d025e1284311f2690263e6efa6bf51585e5741818ece63e5862487e505bb9  LICENSE
 sha256  cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  LICENSE.APACHE2
