@@ -4,7 +4,15 @@
 #
 ################################################################################
 
-RPI_FIRMWARE_VERSION = 3f20b832b27cd730deb6419b570f31a98167eef6
+# To check the current version of the firmware on a running Pi, use
+# `vcgencmd version` which would report something like this:
+# Jan 18 2023 12:28:01 
+# Copyright (c) 2012 Broadcom
+# version 658f02cc8edcb68a568273f05d2b6ceede181e15 (clean) (release) (start)
+
+# RPI_FIRMWARE_VERSION = bcf6e3217f79d4aafe29b836003df5ad90fca399
+# RPI_FIRMWARE_VERSION = eb18fe00ed39ea8d09c100609f7557a03362ee19  # kernel: Bump to 6.1.28
+RPI_FIRMWARE_VERSION = e03ae3cadf56d0c23905b783f4c73e45f5179845  # kernel: Bump to 6.1.42
 RPI_FIRMWARE_SITE = $(call github,raspberrypi,firmware,$(RPI_FIRMWARE_VERSION))
 RPI_FIRMWARE_LICENSE = BSD-3-Clause
 RPI_FIRMWARE_LICENSE_FILES = boot/LICENCE.broadcom
