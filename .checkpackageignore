@@ -26,7 +26,6 @@ board/canaan/k210-soc/post-build.sh Shellcheck
 board/canaan/k210-soc/rootfs_overlay/sbin/init Shellcheck
 board/chromebook/elm/sign.sh Shellcheck
 board/chromebook/mksd.sh Shellcheck
-board/chromebook/snow/linux-4.15-dts-tpm.patch ApplyOrder Upstream
 board/chromebook/snow/sign.sh Shellcheck
 board/ci20/patches/uboot/0001-mips-Remove-default-endiannes.patch Upstream
 board/cubietech/cubieboard2/post-image.sh Shellcheck
@@ -307,7 +306,6 @@ package/dmalloc/0004-Makefile-use-the-configure-detected-or-user-supplied.patch 
 package/dmalloc/0005-configure-use-LD-instead-of-hard-coding-ld.patch Upstream
 package/dmraid/0001-fix-compilation-under-musl.patch Upstream
 package/dmraid/S20dmraid Variables
-package/dnsmasq/S80dnsmasq Shellcheck
 package/docker-engine/S60dockerd Indent Shellcheck Variables
 package/docopt-cpp/0001-only-build-one-target-use-BUILD_SHARED_LIBS-where-appropriate.patch Upstream
 package/domoticz/S99domoticz Shellcheck
@@ -364,8 +362,6 @@ package/evemu/0004-src-evemu.c-fix-build-with-kernels-4.16.patch Upstream
 package/exim/0001-Build-buildconfig-for-the-host.patch Upstream
 package/exim/0002-Don-t-make-backup-copies-of-installed-files.patch Upstream
 package/exim/0003-Skip-version-check-and-symlink-installation.patch Upstream
-package/exim/0004-exim_lock-fix-lstat-related-build-errors.patch Upstream
-package/exim/0005-sieve-fix-build-errors.patch Upstream
 package/exim/S86exim Indent Variables
 package/expect/0001-enable-cross-compilation.patch Upstream
 package/expect/0002-allow-tcl-build-directory.patch Upstream
@@ -422,8 +418,8 @@ package/gamin/0002-no-const-return.patch Sob Upstream
 package/gamin/0003-fix-missing-PTHREAD_MUTEX_RECURSIVE_NP.patch Upstream
 package/gcc/11.4.0/0001-or1k-Add-mcmodel-option-to-handle-large-GOTs.patch Upstream
 package/gcc/11.4.0/0004-disable-split-stack-for-non-thread-builds.patch Upstream
-package/gcc/12.3.0/0001-disable-split-stack-for-non-thread-builds.patch Upstream
-package/gcc/13.2.0/0001-disable-split-stack-for-non-thread-builds.patch Upstream
+package/gcc/12.4.0/0001-disable-split-stack-for-non-thread-builds.patch Upstream
+package/gcc/13.3.0/0001-disable-split-stack-for-non-thread-builds.patch Upstream
 package/gcc/8.4.0/0001-xtensa-fix-PR-target-91880.patch Upstream
 package/gcc/8.4.0/0002-Revert-re-PR-target-92095-internal-error-with-O1-mcp.patch Upstream
 package/gcc/8.4.0/0003-libsanitizer-Remove-cyclades-from-libsanitizer.patch Upstream
@@ -642,7 +638,6 @@ package/libloki/0001-allow-to-install-to-a-specific-location-using-DESTDI.patch 
 package/libloki/0002-use-ln-snf.patch Upstream
 package/libmad/0001-mips-h-constraint-removal.patch Sob Upstream
 package/libmad/0002-configure-ac-automake-foreign.patch Upstream
-package/libmanette/0001-Meson-Un-hardcode-building-a-shared-library.patch Upstream
 package/libmng/0001-jpeg-9a.patch Upstream
 package/libmodsecurity/0001-configure.ac-drop-usage-of-git-at-configure-time.patch Upstream
 package/libmodsecurity/0002-modsecurity.pc.in-add-lstdc.patch Upstream
@@ -1081,7 +1076,6 @@ package/python3/0028-fix-building-on-older-distributions.patch Upstream
 package/python3/0029-configure.ac-fixup-CC-print-multiarch-output-for-mus.patch Upstream
 package/python3/0030-Add-an-option-to-disable-the-berkeleydb-module.patch Upstream
 package/python3/0031-lib-crypt-uClibc-ng-doesn-t-set-errno-when-encryptio.patch Upstream
-package/qemu/0001-tests-fp-disable-fp-bench-build-by-default.patch Upstream
 package/qemu/0002-softmmu-qemu-seccomp.c-add-missing-header-for-CLONE_.patch Upstream
 package/qextserialport/0001-Create-a-main-include-file-QExtSerialPort.patch Upstream
 package/qextserialport/0002-Tell-qmake-to-add-a-pkgconfig-file-to-ease-usage-wit.patch Upstream
@@ -1264,7 +1258,6 @@ package/tinyalsa/0001-include-time.h-before-asound.h.patch Upstream
 package/tinycbor/0001-Makefile-add-DISABLE_WERROR.patch Upstream
 package/tinycompress/0001-wave-add-time.h-missing-header-inclusion.patch Upstream
 package/tinydtls/0001-sha2-sha2.c-fix-build-on-big-endian.patch Upstream
-package/tinyproxy/0001-prevent-junk-from-showing-up-in-error-page-in-invalid-requests.patch Upstream
 package/tinyxml/0001-In-stamp-always-advance-the-pointer-if-p-0xef.patch Upstream
 package/tpm2-abrmd/S80tpm2-abrmd Indent Shellcheck Variables
 package/tpm2-tss/0001-Temporary-fix-for-build-without-C.patch Upstream
@@ -1393,7 +1386,6 @@ package/x11r7/xserver_xorg-server/0001-include-misc.h-fix-uClibc-build.patch Ups
 package/x11r7/xserver_xorg-server/S40xorg Shellcheck Variables
 package/x11vnc/0001-Fix-build-on-32bit-arches-with-64bit-time_t.patch Upstream
 package/x11vnc/0002-scan-limit-access-to-shared-memory-segments-to-current-user.patch Upstream
-package/x265/0001-fix-gcc-options.patch Upstream
 package/xen/0001-9pfs-include-linux-limits.h-for-XATTR_SIZE_MAX.patch Upstream
 package/xen/0002-Fix-build-with-64-bits-time_t.patch Upstream
 package/xen/0003-libs-light-fix-tv_sec-printf-format.patch Upstream
@@ -1428,9 +1420,6 @@ package/zip/0006-unix-configure-borrow-the-LFS-test-from-autotools.patch Upstrea
 package/zip/0007-timezone.c-needs-time.h-fixes-musl-compile.patch Upstream
 package/zip/0008-fix-musl-static-build.patch Upstream
 package/zmqpp/0001-Allow-building-shared-or-static-library-only.patch Upstream
-package/znc/0001-LibreSSL-3.5-opaqued-structures.patch Upstream
-package/znc/0002-Fix-build-with-libressl.patch Upstream
-package/znc/0003-DH_set0_pqg-and-DH_get0_key-have-existed-since-Libre.patch Upstream
 package/zziplib/0001-implant-ZZIP_LIBLATEST-for-zzip_lib.patch Upstream
 support/dependencies/check-host-asciidoc.sh Shellcheck
 support/dependencies/check-host-cmake.sh Shellcheck
@@ -1443,8 +1432,6 @@ support/dependencies/check-host-xzcat.sh Shellcheck
 support/dependencies/dependencies.sh Shellcheck
 support/download/bzr ConsecutiveEmptyLines Shellcheck
 support/download/cargo-post-process Shellcheck
-support/download/check-hash Shellcheck
-support/download/cvs Shellcheck
 support/download/dl-wrapper Shellcheck
 support/download/file Shellcheck
 support/download/go-post-process Shellcheck
@@ -1466,9 +1453,7 @@ support/scripts/expunge-gconv-modules Shellcheck
 support/scripts/fix-configure-powerpc64.sh EmptyLastLine
 support/scripts/generate-gitlab-ci-yml Shellcheck
 support/scripts/mkmakefile ConsecutiveEmptyLines Shellcheck
-support/scripts/mkusers Shellcheck
 support/scripts/setlocalversion Shellcheck
 support/testing/tests/core/post-build.sh Shellcheck
 support/testing/tests/package/test_opkg/post-build.sh Shellcheck
 support/testing/tests/utils/test_get_developers/0001-package-binutils-change-.mk.patch NumberedSubject Upstream
-utils/checkpackagelib/lib_patch.py Flake8
