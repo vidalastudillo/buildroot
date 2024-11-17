@@ -1,12 +1,12 @@
 # md5, sha256 from https://pypi.org/pypi/orjson/json
-md5  b183de0d2f7cc8a5ebcf1e5e93e74544  orjson-3.10.10.tar.gz
-sha256  37949383c4df7b4337ce82ee35b6d7471e55195efa7dcb45ab8226ceadb0fe3b  orjson-3.10.10.tar.gz
+md5  1e750c4999b3522265c93a30c091aa8e  orjson-3.10.11.tar.gz
+sha256  e35b6d730de6384d5b2dab5fd23f0d76fae8bbc8c353c2f78210aa5fa4beb3ef  orjson-3.10.11.tar.gz
 # Locally computed sha256 checksums
 sha256  36bb253818ac13761081556ff5c457d626da9df1eb4f56194d9ad3926c418a68  include/cargo/half-2.4.1/LICENSE
 sha256  5891374673c9ae0ff2a4d400dab3eb836483205897d265b6ff97fe46c75d8610  include/cargo/itoap-1.0.1/LICENSE
 sha256  01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f  include/cargo/memchr-2.7.4/COPYING
 sha256  f98e09091d5ae02b2f2ec1ead4f7f28c4c44d1cb98b078739ba67091637e170c  include/cargo/castaway-0.2.3/LICENSE
-sha256  01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f  include/cargo/jiff-0.1.13/COPYING
+sha256  01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f  include/cargo/jiff-0.1.14/COPYING
 sha256  c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566  include/cargo/xxhash-rust-0.8.12/LICENSE
 sha256  268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5  include/cargo/target-lexicon-0.12.16/LICENSE
 sha256  0d52feec79589df30138dad3800323fe5686b764b73347330a2dfef8ac83efe8  include/cargo/compact_str-0.8.0/LICENSE
