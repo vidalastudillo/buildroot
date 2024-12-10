@@ -1,6 +1,6 @@
 # md5, sha256 from https://pypi.org/pypi/orjson/json
-md5  1e750c4999b3522265c93a30c091aa8e  orjson-3.10.11.tar.gz
-sha256  e35b6d730de6384d5b2dab5fd23f0d76fae8bbc8c353c2f78210aa5fa4beb3ef  orjson-3.10.11.tar.gz
+md5  2394ae22a54384f8f5b6569a69c78bc9  orjson-3.10.12.tar.gz
+sha256  0a78bbda3aea0f9f079057ee1ee8a1ecf790d4f1af88dd67493c6b8ee52506ff  orjson-3.10.12.tar.gz
 # Locally computed sha256 checksums
 sha256  36bb253818ac13761081556ff5c457d626da9df1eb4f56194d9ad3926c418a68  include/cargo/half-2.4.1/LICENSE
 sha256  5891374673c9ae0ff2a4d400dab3eb836483205897d265b6ff97fe46c75d8610  include/cargo/itoap-1.0.1/LICENSE
