@@ -16,4 +16,5 @@ PYTHON_WHEEL_CPE_ID_PRODUCT = wheel
 # 0001-fixed-security-issue-around-wheel-unpack.patch
 PYTHON_WHEEL_IGNORE_CVES += CVE-2026-24049
 
+$(eval $(python-package))
 $(eval $(host-python-package))
