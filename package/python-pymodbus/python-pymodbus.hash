@@ -1,5 +1,5 @@
-# md5, sha256 from https://pypi.org/pypi/pymodbus/json
-md5  6449d26f251752eac6a7e4a8f7af2bd9  pymodbus-3.9.2.tar.gz
-sha256  2d08ab7bf6d1abc55a87f4faa3a7b04f74d7310b8c9771c3d66ee5fccf2e25ac  pymodbus-3.9.2.tar.gz
+# md5, sha256 from https://pypi.org/pypi/pymodbus/3.11.2/json
+md5  658112be7a0ca2c9d85789a64751ece0  pymodbus-3.11.2.tar.gz
+sha256  132712baf79cae339aac694739b14551bab69b2a078570cb1350b1db0cccdba7  pymodbus-3.11.2.tar.gz
 # Locally computed sha256 checksums
-sha256  47f904249172e795a6b32de91f471073297befffd74e17cafc288d348a55972e  LICENSE
+sha256  572a4d6fa7541553f70cc6d494fbcbee7eb7d3f2fbd16080d39b20cccda26f0b  LICENSE
