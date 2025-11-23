@@ -1,5 +1,5 @@
-# md5, sha256 from https://pypi.org/pypi/python-dateutil/json
-md5  f4888298c0f2d5239c85c6457455a975  python-dateutil-2.9.0.tar.gz
-sha256  78e73e19c63f5b20ffa567001531680d939dc042bf7850431877645523c66709  python-dateutil-2.9.0.tar.gz
+# md5, sha256 from https://pypi.org/pypi/python_dateutil/2.9.0.post0/json
+md5  81cb6aad924ef40ebfd3d62eaebe47c6  python-dateutil-2.9.0.post0.tar.gz
+sha256  37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3  python-dateutil-2.9.0.post0.tar.gz
 # Locally computed sha256 checksums
 sha256  ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e  LICENSE
