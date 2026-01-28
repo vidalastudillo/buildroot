@@ -10,5 +10,7 @@ PYTHON_AIOFILES_SITE = https://files.pythonhosted.org/packages/41/c3/534eac40372
 PYTHON_AIOFILES_SETUP_TYPE = hatch
 PYTHON_AIOFILES_LICENSE = Apache-2.0
 PYTHON_AIOFILES_LICENSE_FILES = LICENSE
+PYTHON_AIOFILES_DEPENDENCIES = \
+	host-python-hatch-vcs
 
 $(eval $(python-package))
