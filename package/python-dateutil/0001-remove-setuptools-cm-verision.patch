@@ -1,0 +1,11 @@
+--- a/pyproject.toml	2025-11-25 15:50:26.685665007 +0000
++++ b/pyproject.toml	2025-11-25 15:50:45.293951002 +0000
+@@ -3,7 +3,7 @@
+     "setuptools; python_version != '3.3'",
+     "setuptools<40.0; python_version == '3.3'",
+     "wheel",
+-    "setuptools_scm<8.0"
++    "setuptools_scm"
+ ]
+ build-backend = "setuptools.build_meta"
+ 
