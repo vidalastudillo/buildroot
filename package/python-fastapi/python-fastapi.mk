@@ -12,6 +12,8 @@ PYTHON_FASTAPI_LICENSE = MIT
 PYTHON_FASTAPI_LICENSE_FILES = LICENSE
 PYTHON_FASTAPI_CPE_ID_VENDOR = tiangolo
 PYTHON_FASTAPI_CPE_ID_PRODUCT = fastapi
-PYTHON_FASTAPI_DEPENDENCIES = host-python-pdm-backend
+PYTHON_FASTAPI_DEPENDENCIES = \
+	host-python-pdm-backend \
+	python-annotated-doc
 
 $(eval $(python-package))
