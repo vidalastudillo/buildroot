@@ -150,7 +150,7 @@ N:	Alexey Lukyanchuk <skif@skif-web.ru>
 F:	package/zabbix/
 
 N: 	Alexis Lothoré <alexis.lothore@bootlin.com>
-F: 	package/python-scp
+F: 	package/python-scp/
 
 N:	Alistair Francis <alistair@alistair23.me>
 F:	board/sifive/
@@ -1275,6 +1275,7 @@ F:	configs/mangopi_mq1rdw2_defconfig
 F:	configs/olimex_a*
 F:	configs/rockpro64_defconfig
 F:	package/at/
+F:	package/bind/
 F:	package/binutils/
 F:	package/cryptsetup/
 F:	package/dash/
@@ -2278,6 +2279,7 @@ F:	support/testing/tests/package/test_python_django.py
 F:	support/testing/tests/package/test_python_fastapi.py
 F:	support/testing/tests/package/test_python_pydantic.py
 F:	support/testing/tests/package/test_python_pydantic_settings.py
+F:	support/testing/tests/package/test_python_requests.py
 F:	support/testing/tests/package/test_python_ruamel_yaml.py
 F:	support/testing/tests/package/test_python_sdbus_modemmanager.py
 F:	support/testing/tests/package/test_python_tzlocal.py
@@ -2289,6 +2291,7 @@ F:	support/testing/tests/package/sample_python_django.py
 F:	support/testing/tests/package/sample_python_fastapi.py
 F:	support/testing/tests/package/sample_python_pydantic.py
 F:	support/testing/tests/package/sample_python_pydantic_settings.py
+F:	support/testing/tests/package/sample_python_requests.py
 F:	support/testing/tests/package/sample_python_ruamel_yaml.py
 F:	support/testing/tests/package/sample_python_sdbus_modemmanager.py
 
@@ -3123,7 +3126,6 @@ F:	package/libcli/
 
 N:	Steve Kenton <skenton@ou.edu>
 F:	package/dvdauthor/
-F:	package/dvdrw-tools/
 F:	package/memtest86/
 F:	package/mjpegtools/
 F:	package/udftools/
@@ -3454,6 +3456,7 @@ F:	package/tpm2-pkcs11/
 N:	Yann E. MORIN <yann.morin@orange.com>
 F:	.editorconfig
 F:	package/gpsd/
+F:	package/mosquitto/
 F:	package/skopeo/
 
 N:	Yegor Yefremov <yegorslists@googlemail.com>

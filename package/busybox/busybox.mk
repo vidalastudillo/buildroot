@@ -15,6 +15,13 @@ BUSYBOX_CPE_ID_VENDOR = busybox
 # 0004-nslookup-sanitize-all-printed-strings-with-printable.patch
 BUSYBOX_IGNORE_CVES += CVE-2022-28391
 
+# 0012-archival-libarchive-sanitize-filenames-on-output.patch
+# 0013-testsuite-tar-tests-fix-test-after-cve-2025-46394.patch
+BUSYBOX_IGNORE_CVES += CVE-2025-46394
+
+# 0014-wget-dont-allow-control-characters-or-spaces-in-the-URL.patch
+BUSYBOX_IGNORE_CVES += CVE-2025-60876
+
 BUSYBOX_CFLAGS = \
 	$(TARGET_CFLAGS)
 
