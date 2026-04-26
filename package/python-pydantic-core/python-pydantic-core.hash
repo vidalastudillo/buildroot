@@ -1,4 +1,6 @@
-# Locally calculated after vendoring
-sha256  8919dc76250449ed22d47e94f53929cb44eb982cd4ad80dc0607f8018868e549  python-pydantic-core-2.41.5-cargo4.tar.gz
+# md5, sha256 from https://pypi.org/pypi/pydantic-core/2.46.3/json
+md5  174fa0d7b87bc22665ed75bafe990dd6  pydantic_core-2.46.3.tar.gz
+sha256  41c178f65b8c29807239d47e6050262eb6bf84eb695e41101e62e38df4a5bc2c  pydantic_core-2.46.3.tar.gz
 # Locally computed sha256 checksums
 sha256  2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a  LICENSE
+sha256  0b4e5e3e499cbc2d23ab37206fffd0d3ce2f935e7f005e1fa8ef934ade26704a  python-pydantic-core-2.46.3-cargo4.tar.gz
