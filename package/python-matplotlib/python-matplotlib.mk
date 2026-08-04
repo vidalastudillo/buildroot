@@ -22,6 +22,7 @@ PYTHON_MATPLOTLIB_DEPENDENCIES = \
 	python-pyparsing \
 	freetype \
 	libpng \
+	libraqm \
 	qhull \
 	host-pkgconf \
 	host-python-certifi \
@@ -30,6 +31,7 @@ PYTHON_MATPLOTLIB_DEPENDENCIES = \
 PYTHON_MATPLOTLIB_CONF_OPTS = \
 	-Dmacosx=false \
 	-Dsystem-freetype=true \
+	-Dsystem-libraqm=true \
 	-Dsystem-qhull=true
 PYTHON_MATPLOTLIB_CONF_ENV += \
 	_PYTHON_SYSCONFIGDATA_NAME=$(PKG_PYTHON_SYSCONFIGDATA_NAME) \
