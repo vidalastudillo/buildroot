@@ -1,6 +1,6 @@
-# md5, sha256 from https://pypi.org/pypi/python-dotenv/1.2.2/json
-md5  74d7de20ea73ed77c5a0c2a5d9c39764  python_dotenv-1.2.2.tar.gz
-sha256  2c371a91fbd7ba082c2c1dc1f8bf89ca22564a087c2c287cd9b662adde799cf3  python_dotenv-1.2.2.tar.gz
+# md5, sha256 from https://pypi.org/pypi/python-dotenv/json
+md5  200362180d3d9b71aa0d8a2c102baa97  python_dotenv-1.2.3.tar.gz
+sha256  a20a594dabeaa385725aa239d5244871c143ecb356add8a20fcf23773a6c3a35  python_dotenv-1.2.3.tar.gz
 # Locally computed sha256 checksums
 sha256  80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9  LICENSE
 sha256  80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9  docs/license.md
