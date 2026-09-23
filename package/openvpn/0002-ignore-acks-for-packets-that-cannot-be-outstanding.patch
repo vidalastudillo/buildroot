@@ -24,18 +24,19 @@ Acked-by: MaxF <max@max-fillinger.net>
 ---
 Upstream: https://github.com/OpenVPN/openvpn/commit/d988ef4508e63b28c8e3efcb9f62eb8c836907fe
 CVE: CVE-2026-84732
+[Titouan: fix merge conflicts with openvpn release/2.6 branch]
 Signed-off-by: Titouan Christophe <titouan.christophe@mind.be>
 ---
- src/openvpn/reliable.c                    | 37 ++++++++++++++++-
+ src/openvpn/reliable.c                    | 42 ++++++++++++++++---
  src/openvpn/reliable.h                    | 17 ++++++--
  tests/unit_tests/openvpn/test_packet_id.c | 50 ++++++++++++++++++++++-
- 3 files changed, 98 insertions(+), 6 deletions(-)
+ 3 files changed, 100 insertions(+), 9 deletions(-)
 
 diff --git a/src/openvpn/reliable.c b/src/openvpn/reliable.c
-index 230d6aca47e..ced438e481d 100644
+index babe4c84..1ecabb1a 100644
 --- a/src/openvpn/reliable.c
 +++ b/src/openvpn/reliable.c
-@@ -390,13 +390,35 @@ reliable_empty(const struct reliable *rel)
+@@ -404,15 +404,36 @@ reliable_empty(const struct reliable *rel)
      return true;
  }
  
@@ -50,12 +51,15 @@ index 230d6aca47e..ced438e481d 100644
  void
  reliable_send_purge(struct reliable *rel, const struct reliable_ack *ack)
  {
+-    int i, j;
+-    for (i = 0; i < ack->len; ++i)
 +    unsigned int out_of_window = 0;
 +    packet_id_type first_out_of_window = 0;
 +
-     for (int i = 0; i < ack->len; ++i)
++    for (int i = 0; i < ack->len; ++i)
      {
          packet_id_type pid = ack->packet_id[i];
+-        for (j = 0; j < rel->size; ++j)
 +
 +
 +        if (!validate_packet_id_window(rel, pid))
@@ -68,10 +72,11 @@ index 230d6aca47e..ced438e481d 100644
 +            continue;
 +        }
 +
-         for (int j = 0; j < rel->size; ++j)
++        for (int j = 0; j < rel->size; ++j)
          {
              struct reliable_entry *e = &rel->array[j];
-@@ -417,16 +439,27 @@ reliable_send_purge(struct reliable *rel, const struct reliable_ack *ack)
+             if (e->active && e->packet_id == pid)
+@@ -432,16 +453,27 @@ reliable_send_purge(struct reliable *rel, const struct reliable_ack *ack)
  #endif
                  e->active = false;
              }
@@ -102,7 +107,7 @@ index 230d6aca47e..ced438e481d 100644
  
  #ifdef ENABLE_DEBUG
 diff --git a/src/openvpn/reliable.h b/src/openvpn/reliable.h
-index af95bbc17a1..a85f2e97807 100644
+index 08e0fd75..a76e75ea 100644
 --- a/src/openvpn/reliable.h
 +++ b/src/openvpn/reliable.h
 @@ -105,9 +105,9 @@ struct reliable
@@ -111,14 +116,14 @@ index af95bbc17a1..a85f2e97807 100644
      interval_t initial_timeout;
 -    packet_id_type packet_id;
 -    int offset; /**< Offset of the bufs in the reliable_entry array */
--    bool hold;  /* don't xmit until reliable_schedule_now is called */
+-    bool hold; /* don't xmit until reliable_schedule_now is called */
 +    packet_id_type packet_id; /**< Packet ID for the next packet to be sent out. */
 +    int offset;               /**< Offset of the bufs in the reliable_entry array */
 +    bool hold;                /* don't xmit until reliable_schedule_now is called */
      struct reliable_entry array[RELIABLE_CAPACITY];
  };
  
-@@ -189,6 +189,17 @@ reliable_ack_empty(struct reliable_ack *ack)
+@@ -191,6 +191,17 @@ reliable_ack_empty(struct reliable_ack *ack)
      return !ack->len;
  }
  
@@ -137,10 +142,10 @@ index af95bbc17a1..a85f2e97807 100644
   * Returns the number of packets that need to be acked.
   *
 diff --git a/tests/unit_tests/openvpn/test_packet_id.c b/tests/unit_tests/openvpn/test_packet_id.c
-index 5dfd319ab9a..a5d50de4ae7 100644
+index ff3f7886..a27bd6d4 100644
 --- a/tests/unit_tests/openvpn/test_packet_id.c
 +++ b/tests/unit_tests/openvpn/test_packet_id.c
-@@ -325,6 +325,53 @@ test_copy_acks_to_lru(void **state)
+@@ -271,6 +271,53 @@ test_copy_acks_to_lru(void **state)
      assert_memory_equal(mru_ack.packet_id, expected_ack.packet_id, sizeof(expected_ack.packet_id));
  }
  
@@ -194,9 +199,9 @@ index 5dfd319ab9a..a5d50de4ae7 100644
  int
  main(void)
  {
-@@ -346,7 +393,8 @@ main(void)
+@@ -295,7 +342,8 @@ main(void)
+                                         test_packet_id_write_setup,
                                          test_packet_id_write_teardown),
- 
          cmocka_unit_test(test_get_num_output_sequenced_available),
 -        cmocka_unit_test(test_copy_acks_to_lru)
 +        cmocka_unit_test(test_copy_acks_to_lru),
@@ -204,3 +209,6 @@ index 5dfd319ab9a..a5d50de4ae7 100644
  
      };
  
+-- 
+2.55.0
+
