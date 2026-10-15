@@ -1,4 +1,4 @@
-# From https://www.python.org/downloads/release/python-31312/
-sha256  2a84cd31dd8d8ea8aaff75de66fc1b4b0127dd5799aa50a64ae9a313885b4593  Python-3.13.12.tar.xz
+# Locally computed from https://www.python.org/ftp/python/3.13.16/
+sha256  f4b1bfb3c79b5bb11b8d228a12504163b4c0dab4d679828d8f5f26b6cb6ab35d  Python-3.13.16.tar.xz
 # Locally computed
 sha256  78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb  LICENSE
