@@ -1,5 +1,5 @@
 # md5, sha256 from https://pypi.org/pypi/fastapi/json
-md5  0bd117d44dffab7d84415c926b34b63d  fastapi-0.159.1.tar.gz
-sha256  b45b1ec57f3aa4d2f80f09bfbcf068b46764a2ee892e56753f35bb3d9d845ce2  fastapi-0.159.1.tar.gz
+md5  615d6ffdfaec36a6303202c48fa9f676  fastapi-0.162.0.tar.gz
+sha256  6a22c1e2e6e32e0633ee7e170f00009a29b8228b16feb219ee42f32fd8d88a8f  fastapi-0.162.0.tar.gz
 # Locally computed sha256 checksums
 sha256  4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e  LICENSE
