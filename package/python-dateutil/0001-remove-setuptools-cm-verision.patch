@@ -1,0 +1,22 @@
+From: VIDAL & ASTUDILLO Ltda <info@vidalastudillo.com>
+Subject: [PATCH] Accept the setuptools_scm the distribution provides
+
+python-dateutil 3.0.0 asks for setuptools_scm below 8.0. Buildroot carries
+one setuptools_scm for the whole tree, 9.2.2 in 2026.08, and the PEP 517
+build refuses to run when the pin is not met, so dateutil cannot be built.
+The pin is dropped; dateutil only reads its version through setuptools_scm.
+
+Upstream: none; python-dateutil still pins setuptools_scm<8.0 in 3.0.0.
+
+---
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -2,7 +2,7 @@
+ requires = [
+     "setuptools; python_version != '3.3'",
+     "setuptools<40.0; python_version == '3.3'",
+-    "setuptools_scm<8.0"
++    "setuptools_scm"
+ ]
+ build-backend = "setuptools.build_meta"
+ 

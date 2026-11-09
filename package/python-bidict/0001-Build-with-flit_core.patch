@@ -1,0 +1,24 @@
+From: VIDAL & ASTUDILLO Ltda <info@vidalastudillo.com>
+Subject: [PATCH] Build with flit_core
+
+bidict packages itself with uv_build, which Buildroot does not carry. bidict
+is pure Python with static metadata, so flit_core, which Buildroot carries,
+builds the same wheel: the same sources, metadata and dependencies.
+Without this patch the PEP 517 build cannot start.
+
+Upstream: none; bidict chose uv_build as its build backend.
+
+---
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -78,8 +78,8 @@
+ # The ceiling is only change control, and is what uv recommends (it warns without one). Keep it
+ # covering the uv in uv.lock, so `uv build` keeps using that uv's built-in uv_build rather than
+ # downloading one; update_dev_dependencies checks this.
+-requires = ["uv_build>=0.8.13,<0.12"]
+-build-backend = "uv_build"
++requires = ["flit_core>=3.12,<4"]
++build-backend = "flit_core.buildapi"
+ 
+ [tool.ty.src]
+ include = ["bidict", "tests"]
