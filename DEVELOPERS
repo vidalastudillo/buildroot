@@ -233,6 +233,7 @@ F:	package/grep/
 F:	package/gtkiostream/
 F:	package/htpdate/
 F:	package/i2c-tools/
+F:	package/imagemagick/
 F:	package/jq/
 F:	package/libapparmor/
 F:	package/libb64/
@@ -253,6 +254,7 @@ F:	package/qpdf/
 F:	package/qt5/qt5coap/
 F:	package/qt5/qt5knx/
 F:	package/qt5/qt5mqtt/
+F:	package/qt6/
 F:	package/rtl8723ds/
 F:	package/rtl8723ds-bt/
 F:	package/sam-ba/
@@ -1647,9 +1649,6 @@ F:	package/x11r7/xdriver_xf86-video-imx/
 N:	Jesse Taube <Mr.Bossman075@gmail.com>
 F:	board/freescale/imxrt1050evk/
 F:	configs/imxrt1050-evk_defconfig
-
-N:	Jesse Van Gavere <jesseevg@gmail.com>
-F:	package/qt6/
 
 N:	Jianhui Zhao <zhaojh329@gmail.com>
 F:	package/libuhttpd/
